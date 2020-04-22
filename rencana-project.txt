@@ -1,0 +1,15 @@
+RENCANA PENYELESAIAN PROJECT
+
+=== Pembuatan Website Statis - Responsive ===
+
+1. Rencana Pembuatan Layout                       : 21-22 April 2020
+2. Penentuan Layout dan Konten (Asset dan Warna)  : 22 April 2020
+3. Pembagian Tugas per Anggota Kelompok           : 22 April 2020
+4. Coding Mandiri - Koordinasi                    : 23 - 26 April 2020
+5. Upload Hasil Coding ke Github Web              : 24 - 26 April 2020
+6. Finalisasi                                     : 27 April 2020
+
+Keterangan:
+Untuk layout bisa diupload di file rencanalayout.html
+
+*** Semoga sukses rencana ini
