@@ -50,10 +50,6 @@ header {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.tampilan-awal{
-  width: 1170px;
-  margin: 0 auto;
-}
 
 /* Bagian Anggota Kelompok */
 .team-section {
@@ -125,23 +121,23 @@ header {
   font-size: 22px;
 }
 
+/* Bagian Footer */
 .copyrights {
   background: #222222;
   padding: 10px 0;
   text-align: center;
   width: 100%;
 }
-  
+
 .copyrights p {
   margin-bottom: 5px;
   color: #fff;
   font-size: 15px
 }
-  
+
 .copyrights a {
   color: #1abc9c;
 }
 .credits {
   color: #999;
 }
-
