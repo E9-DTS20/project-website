@@ -1,1 +1,14 @@
 /* Code CSS untuk tugas website */
+body{
+  margin: 0;
+  font-family: "Arial";
+}
+a {
+  text-decoration: none;
+}
+
+/* Bagian Pengembangan Awal */
+.tampilan-awal{
+  width: 1170px;
+  margin: 0 auto;
+}
