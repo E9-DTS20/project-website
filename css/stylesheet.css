@@ -74,7 +74,7 @@ header {
 /* Bagian Utama */
 .main-section{
   padding:150px 0 100px 0;
-  background-image: url('../images/background.png');
+  background-image: url('../images/background.jpg');
   background-size: cover;
   border-bottom:2px solid rgba(255,255,255,0.5);
   color: white;
@@ -107,7 +107,7 @@ header {
 .team{
 	min-height: 68vh;
 	padding:60px 15px;
-	background-color:#34495e; 
+	background-color:#34495e;
 	float: left;
 	width: 100%;
 }
