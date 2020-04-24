@@ -1,14 +1,9 @@
 /* Kode Responsive untuk Tablet ukuran maksimal 1000px */
 @media all and (max-width: 1000px) {
-    .team .card{
-		width:50%;
-		margin-bottom:30px;
-	}
+
 }
 
 /* Kode Responsive untuk Smartphone ukuran maksimal 670px */
 @media all and (max-width: 670px) {
-    .team .card{
-		width:100%;
-	}
+
 }
