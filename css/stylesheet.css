@@ -26,63 +26,65 @@ a {
 }
 
 /* Bagian Header */
+/* Bagian Header */
 header {
-  height: 100px;
+  height: 75px;
   width: 100%;
   background-color: rgba(34, 49, 52, 0.9);
-  position :fixed;
+  position: fixed;
   top: 0;
   z-index: 10;
 }
-
-.logo {
-  margin: 3px 5px 5px 5px;
-  width:270px;
-  height:100px;
+/* style untuk animasi logo */
+.animlogo {
+  padding: 0 3px 0 3px;
+  float: left;
+  margin-top: 5px;
+	animation-name: slide;
+  animation-duration: 1s;
 }
 
-.header-left {
-  width:270px;
+@-webkit-keyframes slide {
+  0% { opacity: 0; margin-left: -250px; }
+  100% { opacity: 1; margin-left: 0; }
+}
+
+@keyframes slide {
+  0% { opacity: 0; margin-left: -250px; }
+  100% { opacity: 1; margin-left: 0; }
+}
+/* akhir dari style animasi logo */
+
+/* style untuk top navigasi */
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0 0 0 320px;
+  padding: 0;
+  overflow: hidden;
+}
+ul.topnav li {
   float: left;
 }
-
-.header-center {
-  float: center;
+ul.topnav li a {
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 0 13px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 16px;
+  line-height: 73px;
+}
+ul.topnav li a:hover {
+  background-color: #111;
 }
 
-.header-center a {
-  line-height: 70px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-  float: left;
-  transition: all 0.5s;
-
+ul.topnav li.iconmenu {
+  display: none;
 }
 
-.header-center a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-
-.header-right {
-  float: right;
-  margin-right: 25px;
-  color: white;
-}
-
-.header-right a {
-  line-height: 100px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-  float: left;
-  transition: all 0.5s;
-}
-
-.header-right a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-}
+/* akhir dari top navitasi */
 
 /* Bagian Utama */
 .main-section{

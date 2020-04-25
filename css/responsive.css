@@ -1,19 +1,30 @@
 /* Kode Responsive untuk Tablet ukuran maksimal 1000px */
 @media all and (max-width: 1000px) {
-
+  ul.topnav li a {
+    padding: 0 10px;
+    font-size: 13px;
+  }
+  .animlogo#logo1 {
+    display: none;
+  }
 }
 
 /* Kode Responsive untuk Smartphone ukuran maksimal 670px */
 @media all and (max-width: 670px) {
-    .header-right {
-        display: none;
-    }
-    .menu-icon {
-        display: block;
-        float: right;
-        color: white;
+  .animlogo#logo1 {
+    display: inline-block;
+  }
+  .animlogo#logo2 {
+    display: none;
+  }
 
-    }
+  ul.topnav li{
+    display: none;
+  }
+  ul.topnav li.iconmenu {
+    float: right;
+    display: inline-block;
+  }
     /* .card {
         width: 100%;
     }
