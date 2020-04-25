@@ -68,6 +68,7 @@ header {
 .header-right {
   float: right;
   margin-right: 25px;
+  color: white;
 }
 
 .header-right a {
@@ -131,8 +132,8 @@ header {
 }
 
 .team{
-	min-height: 68vh;
-	padding:60px 15px;
+	min-height: 68px;
+	padding: 50px 15px;
 	background-color:#34495e;
 	float: left;
 	width: 100%;
@@ -201,8 +202,13 @@ header {
 }
 
 /* Bagian Footer */
+.contact-form {
+  background-image: url('../images/contact.jpg');
+  background-size: cover;
+}
 form {
   text-align: center;
+  color: black;
 }
 
 .form-control {
@@ -210,7 +216,7 @@ form {
   background: transparent;
   border: none;
   outline: none;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid black;
   font-size: 20px;
   margin-bottom: 10px;
 }
@@ -218,7 +224,11 @@ form {
 input {
   height: 30px;
   text-align: center;
-
+  font-weight: bold;
+  color: #000;
+}
+textarea {
+  font-weight: bold;
 }
 .contact-form h2{
   padding-bottom: 20px;
@@ -238,6 +248,7 @@ input {
   padding-top: 20px;
   text-align: center;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 /* Bagian Footer */
