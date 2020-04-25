@@ -10,6 +10,9 @@
     }
     .menu-icon {
         display: block;
+        float: right;
+        color: white;
+        
     }
     /* .card {
         width: 100%;
