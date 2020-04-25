@@ -64,6 +64,7 @@ header {
 .header-right {
   float: right;
   margin-right: 25px;
+  color: white;
 }
 
 .header-right a {
@@ -126,7 +127,7 @@ header {
 }
 
 .team{
-	min-height: 68vh;
+	min-height: 68px;
 	padding: 50px 15px;
 	background-color:#34495e;
 	float: left;

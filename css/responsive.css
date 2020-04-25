@@ -5,5 +5,17 @@
 
 /* Kode Responsive untuk Smartphone ukuran maksimal 670px */
 @media all and (max-width: 670px) {
-
+    .header-right {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+    /* .card {
+        width: 100%;
+    }
+    .box {
+        width: 50%;
+    } */
+    /* mau ubah responsive card box belum bisa */
 }
