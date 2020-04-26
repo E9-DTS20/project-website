@@ -1,5 +1,6 @@
 /* Kode Responsive untuk Tablet ukuran maksimal 1000px */
 @media all and (max-width: 1000px) {
+/* Responsive untuk Header */
   ul.topnav li a {
     padding: 0 10px;
     font-size: 13px;
@@ -9,8 +10,18 @@
   }
 }
 
+/* Responsive untuk Footer */
+span#copyrights {
+  font-size: 12px;
+}
+span#credits {
+  font-size: 10px;
+}
+
+
 /* Kode Responsive untuk Smartphone ukuran maksimal 670px */
 @media all and (max-width: 670px) {
+/* Responsive untuk Header */
   .animlogo#logo1 {
     display: inline-block;
   }
@@ -25,6 +36,7 @@
     float: right;
     display: inline-block;
   }
+
     /* .card {
         width: 100%;
     }
@@ -32,4 +44,14 @@
         width: 50%;
     } */
     /* mau ubah responsive card box belum bisa */
+
+/* Responsive untuk footer */
+  .copyrights {
+    height: 60px;
+    text-align: center;
+  }
+  span#credits {
+    float:none;
+    display: block;
+  }
 }
