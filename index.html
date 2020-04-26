@@ -11,7 +11,7 @@
   <body>
     <!-- Kode Bagian Header Tulis Disini -->
     <header>
-      <div class="container">
+      <div class="container" id="top-section">
 	      <span class="animlogo" id="logo1"><img src="./images/logo1.png" /></span>
         <span class="animlogo" id="logo2"><img src="./images/logo2.png" /></span>
         <ul class="topnav">
@@ -25,56 +25,70 @@
 
     <!-- Kode Bagian Utama Tulis Disini -->
     <div class="main-section">
-      <div class="container content">
-          <h1>Tugas Kelompok E9-DTS20</h1>
-          <p>Website sederhana ini merupakan tugas mengimplementasikan pelajaran HTML dan CSS yang telah dipelajari melalui situs <span>Progate</span>.</p>
-          <p>Banyak hal yang dapat kita pelajari di situs <span>Progate</span> terkait dengan pengembangan website. Pada situs tersebut kita akan diberikan materi latihan yang sistematis sehingga mudah diikuti. Bahkan hasil dari latihan yang kita lakukan bisa langsung terlihat, dan bisa langsung dibandingkan dengan jawaban yang sebenarnya. Penasaran dan tertarik untuk belajar bersama <span>Progate</span>? Mari bergabung bersama kami!!!</p>
-          <p><a href="https://progate.com/courses" target="_blank">Bergabung</a></p>
+      <div class="container" id="slider">
+        <figure>
+          <img src="./images/1.jpg" alt="1">
+          <img src="./images/2.jpg" alt="2">
+          <img src="./images/1.jpg" alt="3">
+          <img src="./images/3.jpg" alt="4">
+          <img src="./images/1.jpg" alt="5">
+        </figure>
+        <div class="judul">
+            <h1 id="satu">BELAJAR CODING</h1>
+            <h1 id="dua">BERSAMA E9-DTS20</h1>
+            <p id="p1">Mari Belajar Coding bersama Kami <strong>E9-DTS20</strong>,
+            belajar coding dengans<span style="color:#c293fc; font-weight:bold"> Progate.com</span>.
+            Terstruktur - Mudah - Menyenangkan - Kompeten. <br /><br />
+            Mari bergabung bersama kami!!!</p>
+            <p id="p2"><a href="https://progate.com/courses" target="_blank">Bergabung</a></p>
+        </div>
       </div>
     </div>
 
     <!-- Kode Bagian Anggota Kelompok Tulis Disini -->
     <div class="team">
-      <div class="flex-container">
-        <h1>ANGGOTA KELOMPOK</h1>
-        <div class="card">
-          <div class="box">
-            <img src="./images/Ninja_Ken_1.png" alt="">
-            <h4>HILMAN</h4>
-            <h5>Asal Bekasi</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+      <div class="container" id="team-section">
+        <h1 id="anggota">ANGGOTA KELOMPOK</h1>
+        <div class="baris">
+          <div class="col-20">
+            <div class="box">
+              <img src="./images/Ninja_Ken_1.png" alt="">
+              <h4>HILMAN</h4>
+              <h5>Asal Bekasi</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <div class="box">
-            <img src="./images/Ninja_Ken_2.png" alt="">
-            <h4>IKHWAN AFIF IRFANDI</h4>
-            <h5>Asal Lamongan</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do</p>
+          <div class="col-20">
+            <div class="box">
+              <img src="./images/Ninja_Ken_2.png" alt="">
+              <h4>IKHWAN</h4>
+              <h5>Asal Lamongan</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <div class="box">
-            <img src="./images/Ninja_Ken_3.png" alt="">
-            <h4>IRHADI KW</h4>
-            <h5>Asal Lombok</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+          <div class="col-20">
+            <div class="box">
+              <img src="./images/Ninja_Ken_3.png" alt="">
+              <h4>IRHADY</h4>
+              <h5>Asal Lombok</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <div class="box">
-            <img src="./images/Ninja_Ken_4.png" alt="">
-            <h4>IRFAN ALBI</h4>
-            <h5>Asal Langkat</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+          <div class="col-20">
+            <div class="box">
+              <img src="./images/Ninja_Ken_4.png" alt="">
+              <h4>IRFAN ALBI</h4>
+              <h5>Asal Langkat</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <div class="box">
-            <img src="./images/Ninja_Ken_5.png" alt="">
-            <h4>JAMALUDDIN</h4>
-            <h5>Asal Sukabumi</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+          <div class="col-20">
+            <div class="box">
+              <img src="./images/Ninja_Ken_5.png" alt="">
+              <h4>JAMALUDDIN</h4>
+              <h5>Asal Sukabumi</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+            </div>
           </div>
         </div>
       </div>
@@ -82,16 +96,36 @@
 
     <!-- Kode Bagian Hubungi Kami Tulis Disini -->
     <div class="contact-form">
-      <div class="container">
-        <form action="" id="contact-form" method="">
-          <h2>Hubungi Kami</h2>
-          <h3>Nama</h3>
-          <input type="text" name="name" class="form-control" placeholder="Tuliskan nama anda" required><br>
-          <h3>Email</h3>
-          <input type="email" name="email" class="form-control" placeholder="Tuliskan email anda" required><br>
-          <h3>Pesan</h3>
-          <textarea name="message" class="form-control" cols="30" rows="4" required></textarea><br>
-          <input type="submit" class="contact-submit" value="Kirim"></input>
+      <div class="container" id="form">
+        <form action="" id="contact" method="">
+          <h3 id="hubungi">Hubungi Kami</h3>
+          <div class="baris">
+            <div class="col-25">
+              <span class="label">Nama <span class="asterik">*<span></span>
+            </div>
+            <div class="col-75">
+              <input type="text" id="email" name="nama" placeholder="Tulis Nama Anda">
+            </div>
+          </div>
+          <div class="baris">
+            <div class="col-25">
+              <span class="label">Email <span class="asterik">*<span></span>
+            </div>
+            <div class="col-75">
+              <input type="text" id="email" name="email" placeholder="Tulis Email Anda">
+            </div>
+          </div>
+          <div class="baris">
+            <div class="col-25">
+              <span class="label">Pesan <span class="asterik">*<span></span>
+            </div>
+            <div class="col-75">
+              <textarea id="pesan" name="pesan" placeholder="Tulis pesan Anda disini" style="height:200px"></textarea>
+            </div>
+          </div>
+          <div class="baris">
+            <input type="submit" class="contact-submit" value="Kirim">
+          </div>
         </form>
       </div>
     </div>
