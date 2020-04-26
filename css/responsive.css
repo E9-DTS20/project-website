@@ -8,16 +8,65 @@
   .animlogo#logo1 {
     display: none;
   }
+
+
+/*Responsife Bagian Utama*/
+/*
+.judul  {
+  margin-top:10px;
+  top:25px;
 }
+.judul h1{
+    font-size: 20px;
+    letter-spacing: 10px;
+}
+.judul h2{
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+.judul p#p1{
+  font-size: 18px;
+  line-height: 20px;
+}
+*/
+.judul  {
+  top: 40px;
+  margin-top:20px;
+}
+.judul h1 {
+  letter-spacing: 8px;
+}
+.judul h1#satu{
+    font-size: 25px;
+}
+.judul h1#dua{
+    font-size: 30px;
+}
+.judul p#p1{
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.judul p#p2{
+  margin-top:20px;
+}
+
+.main-section a{
+  background-color: rgba(14,255,200,1);
+  padding: 10px;
+  width:180px;
+  border-radius: 5px;
+}
+
 
 /* Responsive untuk Footer */
-span#copyrights {
-  font-size: 12px;
+  span#copyrights {
+    font-size: 12px;
+  }
+  span#credits {
+    font-size: 10px;
+  }
 }
-span#credits {
-  font-size: 10px;
-}
-
 
 /* Kode Responsive untuk Smartphone ukuran maksimal 670px */
 @media all and (max-width: 670px) {
@@ -37,6 +86,42 @@ span#credits {
     display: inline-block;
   }
 
+/* Responsive Bagian Utama */
+.judul  {
+  text-align: center;
+  width:100%;
+  left: 0;
+  top:15px;
+  padding: 0 10px 10px 10px;;
+}
+.judul h1#satu, .judul h1#dua{
+  margin:0;
+  letter-spacing: 5px;
+}
+.judul h1#satu {
+  font-size:14px;
+}
+
+.judul h1#dua {
+  font-size:18px;
+}
+
+.judul p#p1{
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.judul p#p2{
+  margin:15px 0;
+  font-size:12px;
+}
+
+.main-section a{
+  padding: 10px;
+  margin:0 auto;
+}
+
+
     /* .card {
         width: 100%;
     }
@@ -44,7 +129,12 @@ span#credits {
         width: 50%;
     } */
     /* mau ubah responsive card box belum bisa */
-
+/* Responsive Formulir */
+.col-25, .col-75, input[type=submit] {
+  width: 100%;
+  margin-top: 0;
+  margin-left:0;
+}
 /* Responsive untuk footer */
   .copyrights {
     height: 60px;

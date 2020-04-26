@@ -8,6 +8,7 @@ body{
 }
 h1, h2, h3 {
     font-family: sans-serif;
+    font-weight: normal;
 }
 p {
   font-family: "Lucida Grande";
@@ -30,10 +31,12 @@ a {
 header {
   height: 75px;
   width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);
   position: fixed;
   top: 0;
   z-index: 10;
+}
+.container#top-section{
+  background-color: rgba(34, 49, 52, 0.9);
 }
 /* style untuk animasi logo */
 .animlogo {
@@ -88,27 +91,67 @@ ul.topnav li.iconmenu {
 
 /* Bagian Utama */
 .main-section{
-  padding:120px 0 50px 0;
-  background-image: url('../images/background.jpg');
-  background-size: cover;
+  padding-top:75px;
   border-bottom:1px solid rgba(255,255,255,0.3);
   color: white;
 }
 
-.main-section h1{
-  margin-top:70px;
-  font-size: 40px;
-  opacity: 0.8;
-}
-.main-section p{
-  font-size: 20px;
-  opacity: 0.7;
-  width: 50%;
+.container#slider {
+  overflow: hidden;
+  padding:0;
+  position:relative;
 }
 
-.main-section span{
-  color: yellow;
+.container#slider figure{
+  position:inherit;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
 }
+.container#slider figure img {
+  width: 20%;
+  float: left;
+  text-align: center;
+}
+@keyframes slider {
+  0% { left:0; }
+  20% { left: 0; }
+  25% { left: -100%; }
+  45% { left: -100%; }
+  50% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -300%; }
+  95% { left: -300%; }
+  100% { left: -400%; }
+}
+
+.judul  {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  width:75%;
+  opacity: 0.8;
+}
+.judul h1 {
+  letter-spacing: 10px;
+  display: block;
+}
+.judul h1#satu{
+    font-size: 35px;
+}
+.judul h1#dua{
+    font-size: 45px;
+}
+.judul p#p1{
+  font-size: 25px;
+  line-height: 35px;
+}
+
+.judul p#p2{
+  margin-top:40px;
+}
+
 .main-section a{
   background-color: rgba(14,255,200,1);
   padding: 10px;
@@ -121,62 +164,50 @@ ul.topnav li.iconmenu {
 .main-section a:hover{
   background-color: rgba(14,255,200,0.7);
 }
+
 /* Bagian Anggota Kelompok */
-*{
-	box-sizing: border-box;
-}
-/*
-.container{
-	max-width:1140px;
-	margin:auto;
-	position: relative;
-	min-height: 1px;
-} */
-
-.team{
-	min-height: 68px;
-	padding: 50px 15px;
-	background-color:#34495e;
-	float: left;
-	width: 100%;
+#team-section{
+  background-color:#34495e;
+  text-align:center;
+  width:100%;
 }
 
-.team h1{
-	font-size: 36px;
-	font-family: open sans;
-	font-weight: 700;
+.col-20 {
+  float: left;
+  width: 20%;
+  margin-top: 6px;
+}
+
+#team-section h1{
+	font-size: 30px;
 	color:#ffffff;
-	margin:0;
-	padding-bottom:60px;
-	text-align: center;
+  margin:0;
+  padding:10px 0;
+  letter-spacing: 10px;
 }
 
-.team .card{
-	width:20%;
-	float: left;
-	padding:0px 15px;
-}
-
-.team .card .box {
+.box {
 	padding:15px;
 	background-color: #2d3035;
 	border-radius:5px;
-	transition: margin 1s ease,box-shadow 1s ease;
+  border:2px solid white;
+  height: 390px;
+  margin:0 2px;
+
 }
 
-.team .card .box:hover{
-	margin-top:-15px;
+.box:hover{
 	box-shadow:0px 0px 40px black;
 }
 
-.team .card .box img{
+.box img{
 	width:150px;
 	display: block;
 	margin:10px auto;
 	border-radius:50%;
 }
 
-.team .card .box h4{
+.box h4{
 	font-size: 20px;
 	font-family: open sans;
 	margin:20px 0px 10px;
@@ -185,7 +216,7 @@ ul.topnav li.iconmenu {
 	font-weight: 700;
 }
 
-.team .card .box h5{
+.box h5{
 	font-size:16px;
 	font-family: open sans;
 	font-weight: 600;
@@ -193,7 +224,7 @@ ul.topnav li.iconmenu {
 	margin:0px 0px 15px;
 	text-align: center;
 }
-.team .card .box p{
+.box p{
 	color:#b9b9b9;
 	font-size: 15px;
 	font-family: open sans;
@@ -203,55 +234,68 @@ ul.topnav li.iconmenu {
 	padding:0px 20px;
 }
 
-/* Bagian Footer */
-.contact-form {
-  background-image: url('../images/contact.jpg');
-  background-size: cover;
+
+/* Bagian Formulir */
+
+.container#form {
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  padding: 20px;
 }
-form {
-  text-align: center;
-  color: black;
+h3#hubungi {
+  text-align: left;
+  font-size: 18px;
+  border-bottom: 1px solid #ccc;
+}
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
 }
 
-.form-control {
-  width: 600px;
-  background: transparent;
-  border: none;
-  outline: none;
-  border-bottom: 1px solid black;
-  font-size: 20px;
-  margin-bottom: 10px;
+span.label {
+  padding: 13px 13px 13px 0;
+  display: inline-block;
+}
+span.asterik {
+  color: red;
 }
 
-input {
-  height: 30px;
-  text-align: center;
-  font-weight: bold;
-  color: #000;
-}
-textarea {
-  font-weight: bold;
-}
-.contact-form h2{
-  padding-bottom: 20px;
-  padding-top: 10px;
-}
-
-.contact-form h3{
-  margin-bottom: 10px;
-}
-
-.contact-submit {
-  background-color: #18455e;
+input[type=submit] {
+  background-color: #009022;
   color: white;
-  padding: 30px 180px;
-  font-size: 20px;
-  margin-bottom: 20px;
-  padding-top: 20px;
-  text-align: center;
+  padding: 12px 45px;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
-  border-radius: 10px;
+  float: left;
+  margin-left:25%;
 }
+
+input[type=submit]:hover {
+  background-color: #09b832;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+
+.baris:after { /* Menghapus float setelah baris */
+  content: "";
+  display: table;
+  clear: both;
+}
+
 
 /* Bagian Footer */
 .copyrights {
