@@ -11,35 +11,30 @@
 
 /*Responsife Bagian Utama*/
 .judul  {
-  top: 40px;
-  margin-top:20px;
+  top: 30px;
 }
-.judul h1 {
-  letter-spacing: 8px;
-}
+
 .judul h1#satu{
     font-size: 25px;
 }
 .judul h1#dua{
-    font-size: 30px;
+    font-size: 35px;
 }
+
 .judul p#p1{
-  font-size: 17px;
-  line-height: 25px;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 .judul p#p2{
-  font-size:15px;
-  margin-top: 15px;
-
+  margin-top: 40px;
+  font-size: 15px;
+  letter-spacing: 3px;
 }
 
 .main-section a{
-  padding: 10px;
-  width:180px;
-  border-radius: 5px;
+  padding: 15px;
 }
-
 /* Responsive untuk Anggota Kelompok */
 #team-section{
   padding-bottom:30px;
@@ -86,24 +81,25 @@
   text-align: center;
   width:100%;
   left: 0;
-  top:0px;
-  padding: 0 10px 10px 10px;;
+  top:45px;
+  margin:-1px 0 0 0;
+  padding: 0 9px;
 }
 .judul h1#satu, .judul h1#dua{
-  margin:0;
   letter-spacing: 5px;
 }
 .judul h1#satu {
-  font-size:14px;
+  font-size:16px;
 }
 
 .judul h1#dua {
-  font-size:18px;
+  font-size:20px;
 }
 
 .judul p#p1{
   font-size: 12px;
   line-height: 14px;
+  letter-spacing: 0;
 }
 
 .judul p#p2{
@@ -136,12 +132,15 @@
   margin-left:0;
 }
 /* Responsive untuk footer */
-  .copyrights {
-    height: 60px;
-    text-align: center;
+  .copyrights .container {
+    height: 25px;
   }
-  span#credits {
+p#copyright, p#credits {
+    margin: 0;
+    padding: 0;
     float:none;
     display: block;
+    text-align:center;
+    line-height:14px;
   }
 }
